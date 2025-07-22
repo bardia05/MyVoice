@@ -505,41 +505,37 @@ function showSettings() {
 
 function showAbout() {
     const content = `
-        <div class="modal-header">
-            <h3 class="modal-title">💡 About this tool</h3>
-            <button class="modal-close" onclick="hideModal()">×</button>
-        </div>
-        
-        <div style="line-height: 1.6; color: var(--text-primary);">
-            <p style="margin-bottom: 1rem;">
-                This was built with love and some hope by Kevan Gilbert, for the Bolt hackathon in 
-                2025, in less than 1 day, while also taking care of my own four kiddos. For it to be 
-                truly useful, it must be co-created in partnership with folks with living experience. I 
-                recognize this simple tool will have many gaps!
-            </p>
-            
-            <p style="margin-bottom: 1rem;">
-                I imagine a future version that allows user accounts, to save customizations. Custom 
-                voices, to suit user's preferences more deeply. More themes! More customization. 
-                And, LLM support, with a tool like ChatGPT/Claude built in for even more remarkable 
-                personalization. An onboarding/setup wizard to help populate the board with 
-                everything you love. And, the chance to send text messages one-on-one and in a 
-                group chat! Integration with key hardware tools, switches, eye tracking...the list goes 
-                on!
-            </p>
-            
-            <div style="background: var(--surface); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
-                <p style="margin-bottom: 0.5rem;">
-                    📧 If that sounds interesting, drop me a line! If you or someone you love is a 
-                    speller or non-speaker and wishes to collaborate on building new, better 
-                    versions, please get in touch!
-                </p>
+                <div class="modal-header">
+                <h3 class="modal-title">💡 About MyVoice</h3>
+                <button class="modal-close" onclick="hideModal()">×</button>
             </div>
-            
-            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary);">
-                Built with ❤️ for the AAC community
-            </p>
-        </div>
+
+                <div style="line-height: 1.6; color: var(--text-primary);">
+                    <p style="margin-bottom: 1rem;">
+                        <strong>MyVoice</strong> is a communication web app built to empower individuals who are unable to speak,
+                        helping them express themselves with confidence and clarity. Created with compassion and purpose by 
+                        <strong>Harshit Bardia</strong>, this project aims to give a voice to those who need it the most.
+                    </p>
+                    
+                    <p style="margin-bottom: 1rem;">
+                        Our vision is to bridge the communication gap using technology, making interaction more inclusive and accessible. 
+                        With features that convert text to speech and a clean, intuitive interface, MyVoice enables users to communicate in 
+                        real-time. Future updates will include personalized voice options, offline capabilities, and integration with assistive 
+                        devices like eye trackers and switches.
+                    </p>
+                    
+                    <div style="background: var(--surface); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <p style="margin-bottom: 0.5rem;">
+                            📧 We welcome feedback and collaboration. If you or someone you know could benefit from MyVoice,
+                            or have ideas to improve it further, don’t hesitate to get in touch!
+                        </p>
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--text-secondary);">
+                        Built with ❤️ by Harshit Bardia to give a voice to the voiceless
+                    </p>
+            </div>
+
         
         <button class="btn btn-speak" onclick="hideModal()" style="width: 100%; margin-top: 1rem;">
             Close
