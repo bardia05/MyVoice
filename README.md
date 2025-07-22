@@ -8,10 +8,11 @@ Created with ❤️ by **Harshit Bardia** to uplift lives.
 
 ## ✨ Preview
 
-<img src="assets/myvoice_main_ui.png" alt="Main Interface" width="100%" />
-<img src="assets/myvoice_daily_life_board.png" alt="Daily Life Phrases" width="100%" />
-<img src="assets/myvoice_theme_customization.png" alt="Theme Customization" width="100%" />
-<img src="assets/myvoice_about_section.png" alt="About Section" width="100%" />
+<img src="dist/assets/myvoice_main_ui.png" alt="Main Interface" width="100%" />
+<img src="dist/assets/myvoice_daily_life_board.png" alt="Daily Life Phrases" width="100%" />
+<img src="dist/assets/myvoice_theme_customization.png" alt="Theme Customization" width="100%" />
+<img src="dist/assets/myvoice_about_section.png" alt="About Section" width="100%" />
+
 
 ---
 
