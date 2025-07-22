@@ -1,32 +1,50 @@
-# My Voice - Assistive Communication Tool
+# 🗣️ MyVoice - Assistive Communication Tool
 
-A liberating spelling tool for non-speakers that provides rich, expressive voices through ElevenLabs for personal expression, a fully customizable communication board, and different visual themes to truly put the user first.
+**MyVoice** is an intelligent, customizable communication web app designed to empower non-speakers and spellers by giving them a voice — literally. With expressive speech synthesis, beautiful themes, and intuitive interaction, **MyVoice** transforms how people communicate, express needs, and connect with the world.
 
-## Features
+Created with ❤️ by **Harshit Bardia** to uplift lives.
 
-- **Rich Communication Boards**: Pre-built phrases for daily life, personal expressions, and custom additions
-- **QWERTY Keyboard**: Full keyboard support with both click and physical keyboard input
-- **Word Prediction**: Smart word suggestions to speed up communication
-- **Premium Voices**: ElevenLabs integration for high-quality text-to-speech
-- **Customizable Themes**: Multiple visual themes (Play, Gamer, Zen) for personalization
-- **Responsive Design**: Works on any browser-enabled device
-- **Accessibility First**: Designed for users with varying motor skills
+---
 
-## Technology Stack
+## ✨ Preview
 
-- **Backend**: Flask (Python)
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Text-to-Speech**: ElevenLabs API + Web Speech API fallback
-- **Speech Recognition**: Web Speech API
-- **Styling**: Custom CSS with CSS Grid and Flexbox
+<img src="assets/myvoice_main_ui.png" alt="Main Interface" width="100%" />
+<img src="assets/myvoice_daily_life_board.png" alt="Daily Life Phrases" width="100%" />
+<img src="assets/myvoice_theme_customization.png" alt="Theme Customization" width="100%" />
+<img src="assets/myvoice_about_section.png" alt="About Section" width="100%" />
 
-## Installation
+---
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd assistive-communication-app
-   ```
+## 🚀 Features
+
+- 🎨 **Rich Communication Boards** – Speak through pre-built phrases, categorized for ease.
+- 🔤 **Smart Word Prediction** – Enhances speed using predictive word panels.
+- 🗣️ **Expressive Voices** – Powered by ElevenLabs API for lifelike speech.
+- 🧩 **Fully Customizable** – Choose themes like *Play*, *Gamer*, or *Zen* for your vibe.
+- 📱 **Responsive UI** – Works seamlessly across devices and screen sizes.
+- ♿ **Accessibility-First Design** – Optimized for users with different motor or visual abilities.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Backend**: Python + Flask  
+- **Frontend**: HTML5, CSS3, JavaScript  
+- **Text-to-Speech**: ElevenLabs API + Web Speech API fallback  
+- **Speech Recognition**: Web Speech API  
+- **Styling**: Custom CSS with Grid + Flexbox  
+
+---
+
+## 📦 Installation Guide
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/myvoice.git
+cd myvoice
+
+
 
 2. **Create a virtual environment**
    ```bash
@@ -77,25 +95,30 @@ A liberating spelling tool for non-speakers that provides rich, expressive voice
 ## File Structure
 
 ```
-assistive-communication-app/
-├── app.py                 # Main Flask application
-├── run.py                 # Application runner
-├── config.py              # Configuration settings
-├── requirements.txt       # Python dependencies
-├── README.md             # This file
+myvoice/
+├── app.py                 # Core Flask app
+├── run.py                 # App runner
+├── config.py              # Settings
+├── requirements.txt       # Dependencies
+├── .env                   # Environment vars
 ├── templates/
-│   ├── base.html         # Base template
-│   ├── index.html        # Main application page
-│   ├── 404.html          # Error page
-│   └── 500.html          # Error page
-└── static/
-    ├── css/
-    │   └── styles.css    # Main stylesheet
-    ├── js/
-    │   ├── app.js        # Main application logic
-    │   ├── elevenlabs.js # ElevenLabs integration
-    │   └── speech.js     # Speech recognition/synthesis
-    └── uploads/          # User uploaded files
+│   ├── base.html
+│   ├── index.html
+│   ├── 404.html
+│   └── 500.html
+├── static/
+│   ├── css/styles.css
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── elevenlabs.js
+│   │   └── speech.js
+│   └── uploads/
+└── assets/
+    ├── myvoice_main_ui.png
+    ├── myvoice_daily_life_board.png
+    ├── myvoice_theme_customization.png
+    └── myvoice_about_section.png
+
 ```
 
 ## API Endpoints
@@ -117,7 +140,6 @@ assistive-communication-app/
 
 ## Accessibility Features
 
-- **Keyboard Navigation**: Full keyboard support for all interactions
 - **High Contrast**: Support for high contrast mode
 - **Reduced Motion**: Respects user's motion preferences
 - **Screen Reader**: Semantic HTML for screen reader compatibility
@@ -132,26 +154,21 @@ assistive-communication-app/
 
 ## Contributing
 
-This tool was built to be co-created with the AAC (Augmentative and Alternative Communication) community. If you or someone you love is a speller or non-speaker and wishes to collaborate on building better versions, please get in touch!
+This app thrives with real user input. If you're from the AAC community or know someone who is, your suggestions and collaboration are more than welcome.
 
-## Future Enhancements
 
-- User accounts for saving customizations
-- More voice options and custom voice training
-- Additional themes and customization options
-- LLM integration for enhanced personalization
-- Hardware integration (switches, eye tracking)
-- Group chat and messaging features
-- Mobile app versions
+## 🔮 Coming Soon
+      🔐 User profiles to save preferences
 
-## License
+      🧠 AI-driven message completion
 
-This project is open source and available under the MIT License.
+      👁️ Eye-tracking and switch integration
 
-## Support
+      📲 Android/iOS App
 
-For support, feature requests, or collaboration opportunities, please open an issue or contact the development team.
+      📞 Group chat & video calls
+
+      🧑‍🎤 Custom voice training
 
 ---
-
-Built with ❤️ for the AAC community
+Built with 💙 for those who speak differently.
