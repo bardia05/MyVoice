@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+        <div class="message-section">
+            <h2 class="message-label">YOUR MESSAGE</h2>
+            <div
+                class="message-display"
+                id="message-text"
+                contenteditable="true"
+                spellcheck="false"
+            >
+                What would you like to say?
+            </div>
+         </div>
+
+    
+        
+        <div class="header-controls">
+            <button class="btn btn-mine" id="mine-btn">
+                <span class="btn-icon">⭐</span>
+                Mine
+            </button>
+            <button class="btn btn-clear" id="clear-btn">
+                <span class="btn-icon">🗑️</span>
+                Clear
+            </button>
+            <button class="btn btn-speak" id="speak-btn">
+                <span class="btn-icon">🔊</span>
+                Speak
+            </button>
+        </div>
+        
+        <div class="voice-section">
+            <h2 class="voice-label">{{ user_name }}'s Voice</h2>
+            <button class="voice-settings-btn" id="voice-settings-btn">
+                <span class="btn-icon">🔧</span>
+                Choose how it looks and sounds!
+            </button>
+            <button class="about-btn" id="about-btn">
+                <span class="btn-icon">❓</span>
+                About this tool
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-main">
+        <!-- Left Panel - Communication Boards -->
+        <div class="left-panel">
+            <!-- Mine Section -->
+            <section class="board-section" id="mine-section">
+                <h3 class="section-title">
+                    <span class="section-icon">⭐</span>
+                    MINE
+                </h3>
+                <div class="board-grid mine-grid" id="mine-board">
+                    <!-- Mine phrases will be loaded here -->
+                </div>
+                <button class="add-custom-btn" id="add-custom-btn">
+                    <span class="btn-icon">➕</span>
+                    Add Custom
+                </button>
+                <button class="save-message-btn" id="save-message-btn">
+                    <span class="btn-icon">⭐</span>
+                    Save Current Message
+                </button>
+            </section>
+
+            <!-- Daily Life Section -->
+            <section class="board-section" id="daily-life-section">
+                <h3 class="section-title">DAILY LIFE</h3>
+                <div class="board-grid daily-life-grid" id="daily-life-board">
+                    <!-- Daily life phrases will be loaded here -->
+                </div>
+            </section>
+
+            <!-- QWERTY Keyboard -->
+            <!-- <section class="keyboard-section">
+                <h3 class="section-title">QWERTY KEYBOARD</h3>
+                <div class="keyboard" id="keyboard">
+                    <div class="keyboard-row">
+                        <button class="key number-key" data-key="1">1</button>
+                        <button class="key number-key" data-key="2">2</button>
+                        <button class="key number-key" data-key="3">3</button>
+                        <button class="key number-key" data-key="4">4</button>
+                        <button class="key number-key" data-key="5">5</button>
+                        <button class="key number-key" data-key="6">6</button>
+                        <button class="key number-key" data-key="7">7</button>
+                        <button class="key number-key" data-key="8">8</button>
+                        <button class="key number-key" data-key="9">9</button>
+                        <button class="key number-key" data-key="0">0</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="key letter-key" data-key="q">q</button>
+                        <button class="key letter-key" data-key="w">w</button>
+                        <button class="key letter-key" data-key="e">e</button>
+                        <button class="key letter-key" data-key="r">r</button>
+                        <button class="key letter-key" data-key="t">t</button>
+                        <button class="key letter-key" data-key="y">y</button>
+                        <button class="key letter-key" data-key="u">u</button>
+                        <button class="key letter-key" data-key="i">i</button>
+                        <button class="key letter-key" data-key="o">o</button>
+                        <button class="key letter-key" data-key="p">p</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="key letter-key" data-key="a">a</button>
+                        <button class="key letter-key" data-key="s">s</button>
+                        <button class="key letter-key" data-key="d">d</button>
+                        <button class="key letter-key" data-key="f">f</button>
+                        <button class="key letter-key" data-key="g">g</button>
+                        <button class="key letter-key" data-key="h">h</button>
+                        <button class="key letter-key" data-key="j">j</button>
+                        <button class="key letter-key" data-key="k">k</button>
+                        <button class="key letter-key" data-key="l">l</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="key letter-key" data-key="z">z</button>
+                        <button class="key letter-key" data-key="x">x</button>
+                        <button class="key letter-key" data-key="c">c</button>
+                        <button class="key letter-key" data-key="v">v</button>
+                        <button class="key letter-key" data-key="b">b</button>
+                        <button class="key letter-key" data-key="n">n</button>
+                        <button class="key letter-key" data-key="m">m</button>
+                    </div>
+                    <div class="keyboard-row">
+                        <button class="key special-key" data-key="shift">Shift</button>
+                        <button class="key special-key space-key" data-key=" ">Space</button>
+                        <button class="key special-key" data-key="backspace">⌫</button>
+                        <button class="key special-key" data-key="enter">↵</button>
+                    </div>
+                </div>
+            </section> -->
+        </div>
+
+        <!-- Right Panel - Word Suggestions -->
+        <div class="right-panel">
+            <div class="mode-tabs">
+                <button class="mode-tab active" data-mode="mine">
+                    <span class="tab-icon">⭐</span>
+                    Mine
+                </button>
+                <button class="mode-tab" data-mode="daily">
+                    <span class="tab-icon">📅</span>
+                    Daily
+                </button>
+                <button class="mode-tab" data-mode="feel">
+                    <span class="tab-icon">💝</span>
+                    Feel
+                </button>
+                <button class="mode-tab" data-mode="keys">
+                    <span class="tab-icon">⌨️</span>
+                    Keys
+                </button>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" class="word-search" id="word-search" placeholder="Find a word">
+            </div>
+            
+            <div class="word-suggestions" id="word-suggestions">
+                <!-- Word suggestions will be loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-left">
+            <span class="status-icon">🎤</span>
+            <span id="status-text">Ready to communicate</span>
+        </div>
+        <div class="status-right">
+            <span class="live-indicator">🔴 LIVE</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
